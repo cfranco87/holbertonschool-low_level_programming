@@ -8,16 +8,15 @@
 int main(void)
 {
 	char alphabet;
-	char ALPHABET;
 
 	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
 		putchar(alphabet);
 	}
 
-	for (ALPHABET = 'A'; alphabet <= 'Z'; ALPHABET++)
+	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
 	{
-		putchar(ALPHABET);
+		putchar(alphabet);
 	}
 
 	putchar('\n');
