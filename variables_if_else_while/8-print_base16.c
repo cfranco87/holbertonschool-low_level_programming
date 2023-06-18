@@ -10,10 +10,10 @@ int main(void)
 	int x;
 
 	{
-		for (x = 0, x <= 16, x++)
-		{ 
-			putchar(x);
-			putchar $((10#16));
+		for (x = 0; x++;)
+		{
+			putchar(x + '0');
+			putchar (tolower(x));
 		}
 	}
 
