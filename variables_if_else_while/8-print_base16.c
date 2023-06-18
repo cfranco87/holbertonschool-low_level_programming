@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 
 /**
  * main- base
@@ -9,12 +8,16 @@
 int main(void)
 {
 	int x;
+	char l;
 
 	{
-		for (x = 0; x <= 16; x++)
+		for (x = 0; x < 10; x++)
 		{
-			putchar(x + '0');
-			putchar (tolower(x));
+			putchar((x % 10) + '0');
+		}
+		for (l = 'a'; l <= 'f'; l++)
+		{
+			putchar(l);
 		}
 	}
 
