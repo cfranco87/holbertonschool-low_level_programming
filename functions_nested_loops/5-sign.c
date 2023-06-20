@@ -3,7 +3,9 @@
 /**
  * print_sign - plus minus
  * @n: character to be checked
- * Return: Always 0
+ * Return: 1 if the number is greater than zero,
+ *         0 if the number is zero,
+ *         -1 if the number is less than zero.
  */
 
 int print_sign(int n)
@@ -17,7 +19,7 @@ int print_sign(int n)
 
 	else if (n == 0)
 	{
-		_putchar(0);
+		_putchar('0');
 		return (0);
 	}
 
