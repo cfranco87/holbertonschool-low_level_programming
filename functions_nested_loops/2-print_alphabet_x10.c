@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * void print_alphabet_x10 - multiple
+ * print_alphabet_x10 - multiple
  * Return: always (sucess)
  */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	char x;
 
