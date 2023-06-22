@@ -2,15 +2,15 @@
 #include <stdio.h>
 
 /**
- *_puts - putting things in
- *@str: string
+ *print_rev - putting things in
+ *@s: sssss
  *Return: sucess
  */
 
-void _puts(char *str)
+void print_rev(char *s)
 {
-		while (*str)
-			_putchar(*str--);
+		while (*s)
+			_putchar(*s--);
 			_putchar('\n');
 
 }
