@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdout.h>
+#include <stdio.h>
 
 /**
  *_puts - putting things in
@@ -9,11 +9,8 @@
 
 void _puts(char *str)
 {
-	char  c;
+		while (*str)
+			_putchar(*str++);
+		_putchar('\n');
 
-	for char(c = 0; str[c]; c++)
-	{
-		_puts(str[c]);
-		_putchar('\n')
-	}
 }
