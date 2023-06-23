@@ -9,13 +9,22 @@
 
 void print_rev(char *s)
 {
-	int len = 0, r;
+	int i = 0;
 
-	while (s[r++])
-		len++;
+	while (s[i] != '\0') /* calculates length of string*/
+	{
+		i++;
+	}
 
-	for (r = len - 1; r >= 0; r--)
-		_putchar(s[r]);
+	for (i =  i - 1; i >= 0; i--)
+	{
+		_putchar(s[i]);
+	}
+
+	_putchar('\n');
+}
+
+
 
 	_putchar('\n');
 }
