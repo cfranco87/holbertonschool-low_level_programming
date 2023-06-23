@@ -2,15 +2,13 @@
 #include <stdio.h>
 
 /**
- *puts2- all even
- *@i: variable
+ *puts2 - all even
  *@str: string
  *Return: always success
  */
 
 void puts2(char *str)
 {
-
 	int i = 0;
 
 	while (*(str + i) != '\0')
