@@ -13,11 +13,19 @@ void print_array(int *a, int n)
 {
 
 	int i = 0;
-	int arr[] = {-198, 298, 402, -1024, 98};
 
-	for (i = 0; i < 5; i++)
-		a[i] = n;
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", a[i]);
 
-	for (i = 0; i < 5; i++)
+		if (i == n - 1)
+			continue;
+
+		printf(", ");
+	}
+
+	printf("\n");
+}
+		
 		printf("arr[%d] = %d\n", i, arr[i]);
 }
