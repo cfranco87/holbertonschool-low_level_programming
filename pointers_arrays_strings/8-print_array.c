@@ -17,7 +17,8 @@ void print_array(int *a, int n)
 	for (i = 0; i < 5; i++)
 		a[i] = n;
 
+	int arr[] = {-198, 298, 402, -1024, 98};
 
 	for (i = 0; i < 5; i++)
-		printf("a[%d] = %d\n", i, a[i]);
+		printf("arr[%d] = %d\n", i, arr[i]);
 }
