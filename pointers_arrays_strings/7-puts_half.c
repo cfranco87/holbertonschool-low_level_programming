@@ -28,6 +28,7 @@ void puts_half(char *str)
 	{
 		x = (j + 1) / 2;
 	}
+
 	for (int k = x; k < i; k++)
 	{
 		_putchar(str[k]);
