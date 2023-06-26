@@ -10,19 +10,19 @@
 
 int _atoi(char *s)
 {
-	int i = 0;
-	int n = 1;
+	int si = 0;
+	int num = 1;
 
 	do {
 		if (*s == '-')
-			n *= -1;
+			si *= -1;
 		else if (*s >= '0' && *s <= '9')
-			n = (n * 10) + (*s - '0');
+			num = (num * 10) + (*s - '0');
 
-		else if (n > 0)
+		else if (num > 0)
 			break;
 
 	} while (*s++);
 
-	return (n * i);
+	return (num * si);
 }
