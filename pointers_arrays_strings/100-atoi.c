@@ -4,28 +4,25 @@
 
 /**
  *_atoi - to interger
- *s:strings
+ *@s:strings
  *Return: interger value from string
  */
 
 int _atoi(char *s)
 {
-	int r = 0;
-	int n = 1;
 	int i = 0;
+	int n = 1;
 
-	while (s[i] == '-' || s[i] == '+')
-	{
-		if (s[i] == '-')
-			n = -n;
-		i++;
-	}
+	do {
+		if (*s == '-')
+			n *= -1;
+		else if (*s >= '0' && *s <= '9')
+			n = (n * 10) + (*s - '0');
 
-	while (s[i] >= '0' && s[i] <= '9')
-	{
-		r = r * 10 + s[i] - '0';
-		i++;
-	}
+		else if (n > 0)
+			break;
 
-	return (r * n);
+	} while (*s++);
+
+	return (n * i);
 }
