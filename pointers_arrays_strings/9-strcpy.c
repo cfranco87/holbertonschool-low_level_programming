@@ -11,9 +11,9 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char* od = dest;
-	char* t = dest;
-	
+	char *od = dest;
+	char *t = dest;
+
 
 	while (*src != '\0')
 	{
