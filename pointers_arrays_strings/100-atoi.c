@@ -4,8 +4,8 @@
 
 /**
  *_atoi - to interger
- *s: strings
- *Return: 0
+ *s:strings
+ *Return: interger value from string
  */
 
 int _atoi(char *s)
@@ -14,14 +14,18 @@ int _atoi(char *s)
 	int n = 1;
 	int i = 0;
 
-	if (s[0] == '-')
+	while (s[i] == '-' || s[i] == '+')
 	{
-		n = -1;
+		if (s[i] == '-')
+			n = -n;
 		i++;
 	}
 
-	for (; s[i] != '\0'; ++i)
+	while (s[i] >= '0' && s[i] <= '9')
+	{
 		r = r * 10 + s[i] - '0';
+		i++;
+	}
 
-	return (i * n);
+	return (r * n);
 }
