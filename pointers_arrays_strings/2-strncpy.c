@@ -6,24 +6,30 @@
  *_strncpy - copy strings
  *@dest: destination
  *@src: source
- *@n: limit of byte
+ *@n: number
  *Return: always success
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+	char *od = dest;
+	char *d = dest;
 
-	for (i = 0; i < n && src[i] != '\0';)
+	while (*src != '\0' && n > 0)
 	{
-		dest[i] = src[i];
-
+		*d = *src;
+		d++;
+		src++;
+		n--;
 	}
 
-	for (; i < n; i++)
-
-	dest[i] = '\0';
+	while (n > 0)
 	{
-		return (dest);
+		*d = '\0';
+		d++;
+		n--;
 	}
+
+	return (od);
+
 }
