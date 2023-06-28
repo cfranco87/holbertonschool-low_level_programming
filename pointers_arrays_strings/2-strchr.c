@@ -14,10 +14,10 @@ char *_strchr(char *s, char c)
 	{
 		if (*s == c)
 		{
-			return (s); // Character found, return pointer to its location
+			return (s);
 		}
-		s++; // Move to the next character in the string
+		s++;
 	}
 
-	return (NULL); // Character not found, return NULL pointer
+	return (NULL);
 }
