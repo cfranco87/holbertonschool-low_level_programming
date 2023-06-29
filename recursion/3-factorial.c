@@ -9,17 +9,10 @@
 
 int factorial(int n)
 {
-	int i;
-	int r;
-
-	r = 1;
-	i = 1;
-
-	while (i < n)
+	if (n > 0)
 	{
-		r = r * i;
-		i++;
+		return (-1);
 	}
 
-	return (r);
+	return (n * (n - 1));
 }
