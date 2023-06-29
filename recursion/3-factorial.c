@@ -9,10 +9,25 @@
 
 int factorial(int n)
 {
-	if (n > 0)
+	if (n < 0)
 	{
 		return (-1);
 	}
 
-	return (n * (n - 1));
+	else if (n == 0)
+	{
+		return (1);
+	}
+
+	else
+	{
+		int i = 1;
+
+		for (i = 1; i <= n; i++)
+		{
+			n *= i;
+		}
+	}
+
+	return (n);
 }
