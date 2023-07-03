@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
 
 /**
- *mul - open
+ *main - multiply
  *@argv: argument vector
  *@argc: argument counter
  *Return: always success
