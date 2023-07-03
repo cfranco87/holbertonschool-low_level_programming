@@ -8,25 +8,21 @@
  *Return: always success
  */
 
-int _mul(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int i, sum = 1;
+	int x, y, result;
 
-	printf("argc = %d\n", argc);
-	if (argc > 1)
+	if (argc != 3)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			printf("argv[%d] = %s\n", i,  argv[i]);
-			sum *= _atoi(argv[i]);
-		}
-		 printf("%d\n", sum);
-	}
-	else
-	{
-		printf("%s\n", "Error");
+		printf("Error\n");
 		return (1);
 	}
+
+	x = _atoi(argv[1]);
+	y = _atoi(argv[2]);
+	result = x * y;
+
+	printf("%d\n", result);
 
 	return (0);
 }
