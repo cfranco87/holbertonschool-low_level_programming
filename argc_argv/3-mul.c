@@ -8,7 +8,7 @@
  *Return: always success
  */
 
-int mul(int argc, char **argv)
+int _mul(int argc, char **argv)
 {
 	int i, sum = 1;
 
