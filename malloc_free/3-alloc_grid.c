@@ -44,5 +44,7 @@ int **alloc_grid(int width, int height)
 		integer[x / width][x % width] = x + 1;
 	}
 
-	return (integer);
+	free(integer);
+
+	return (0);
 }
