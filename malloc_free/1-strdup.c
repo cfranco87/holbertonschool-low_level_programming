@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  *_strdup - copy string and memory
@@ -17,7 +18,7 @@ char *_strdup(char *str)
 
 	char *s;
 
-	s = malloc(sizeof(*str));
+	s = malloc(strlen(str) + 1);
 
 	while (*str != '\0')
 	{
@@ -28,6 +29,8 @@ char *_strdup(char *str)
 
 	*s = '\0';
 
+	free(s);
 	return (s);
+	return (0);
 }
 

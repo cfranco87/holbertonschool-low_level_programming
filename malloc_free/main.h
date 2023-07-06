@@ -25,4 +25,5 @@ int main(int argc, char __attribute__((__unused__)) *argv[]);
 int main(int argc, char **argv);
 int main(int argc, char *argv[]);
 char *create_array(unsigned int size, char c);
+char *_strdup(char *str);
 #endif
