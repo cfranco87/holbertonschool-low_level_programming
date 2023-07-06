@@ -20,6 +20,13 @@ char *_strdup(char *str)
 
 	s = malloc(strlen(str) + 1);
 
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+
+	char *r = s;
+
 	while (*str != '\0')
 	{
 		*s = *str;
@@ -29,8 +36,6 @@ char *_strdup(char *str)
 
 	*s = '\0';
 
-	free(s);
-	return (s);
-	return (0);
+	return (r);
 }
 
