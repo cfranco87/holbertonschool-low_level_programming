@@ -20,6 +20,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	clear = calloc(nmemb, sizeof(int));
 
+	if (clear == NULL)
+	{
+		return (NULL);
+	}
+
 	free(clear);
 	return (clear);
 }
