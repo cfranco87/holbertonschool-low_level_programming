@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  *_calloc - dynamic memory allocation
@@ -18,13 +19,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	clear = calloc(nmemb, sizeof(int));
-
-	if (clear == NULL)
+	clear = malloc(nmemb * size);
+	if (clear != NULL)
 	{
-		return (NULL);
+		memset(clear, 0, nmemb * size);
 	}
-
-	free(clear);
 	return (clear);
 }
