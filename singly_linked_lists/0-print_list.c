@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "list.h"
+#include "lists.h"
 
 /**
  *print_list - singly linked list
@@ -36,5 +36,6 @@ size_t print_list(const list_t *h)
 	}
 
 	printf("]\n");
+
 	return (count);
 }
