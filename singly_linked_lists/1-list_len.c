@@ -4,12 +4,12 @@
 #include "lists.h"
 
 /**
- *print_list - singly linked list
+ *list_len - singly linked list
  *@h: string - (malloc'ed string)
  *Return: the number of nodes
  */
 
-size_t print_list(const list_t *h)
+size_t list_len(const list_t *h)
 {
 	size_t count = 0;
 
