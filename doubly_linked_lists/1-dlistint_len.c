@@ -12,14 +12,13 @@
 size_t dlistint_len(const dlistint_t *h)
 {
 	size_t count = 0;
-	const dlistint_t *current = h;
 
 	while (h != NULL)
 	{
-		printf("%d\n", current->n);
-		current  = current->next;
+		printf("%d\n", h->n);
+		h  = h->next;
 		count++;
 	}
-	printf("-> %lu elements\n", count);
+	printf("-> %lu elements\n",(unsigned long) count);
 	return (count);
 }
