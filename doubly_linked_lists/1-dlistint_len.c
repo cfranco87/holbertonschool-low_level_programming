@@ -23,6 +23,6 @@ size_t dlistint_len(const dlistint_t *h)
 		count++;
 		}
 	}
-	printf("-> %zu elements\n", count);
+	printf("-> %lu elements\n", count);
 	return (count);
 }
