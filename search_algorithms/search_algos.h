@@ -2,8 +2,9 @@
 #define SEARCH_ALGOS
 
 /*libraries used*/
-#include <studio.h>
+#include <stdio.h>
 #include <stddef.h>
+#include <stldlib.h>
 
 /*algorithmic functions*/
 
