@@ -1,10 +1,10 @@
-#ifdef SEARCH_ALGOS
+#ifndef SEARCH_ALGOS
 #define SEARCH_ALGOS
 
 /*libraries used*/
 #include <stdio.h>
 #include <stddef.h>
-#include <stldlib.h>
+#include <stdlib.h>
 
 /*algorithmic functions*/
 
