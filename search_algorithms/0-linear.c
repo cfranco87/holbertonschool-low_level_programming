@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "search_algos.h"
+#include <stddef.h>
 
 /**
  *linear_search - function that searches for a value in a sorted array of
