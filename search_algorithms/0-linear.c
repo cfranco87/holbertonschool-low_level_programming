@@ -5,14 +5,15 @@
 /**
  *linear_search - function that searches for a value in a sorted array of
  *integers using the Binary search algorithm
- *@value: value within array
- *@size: size of the array
  *@array: array in which we will search
+ *@size: size of the array
+ *@value: value within the array
+ *Return: value found
 */
 
 int linear_search(int *array, size_t size, int value)
 {
-	long unsigned int i = 0;
+	size_t i = 0;
 	int flag = 0;
 
 	if (!value && array == NULL)
