@@ -15,6 +15,7 @@
 int linear_search(int *array, size_t size, int value)
 {
     long unsigned int i = 0;
+    int flag = 0; 
 
     if(!value && array == NULL)
         return (-1);
@@ -24,8 +25,12 @@ int linear_search(int *array, size_t size, int value)
 
     for(i = 0; i < size; i++)
         {
+            flag = 1;
             if(*(array + i) == value)
             return (i);
+        
+            if (flag == 0)
+                break;
         }
 
     return (-1);
